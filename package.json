@@ -1,0 +1,38 @@
+{
+  "name": "witbash",
+  "version": "1.0.0",
+  "description": "Free, self-hosted Quiplash clone for LAN parties. 3-10 players, 300+ questions, no internet required.",
+  "keywords": [
+    "party-game",
+    "quiplash",
+    "jackbox",
+    "multiplayer",
+    "lan-party",
+    "self-hosted",
+    "websocket",
+    "react",
+    "game",
+    "trivia",
+    "offline",
+    "local-multiplayer",
+    "browser-game",
+    "no-internet",
+    "open-source-game"
+  ],
+  "author": "PJawale",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prashantjawale/witbash"
+  },
+  "homepage": "https://github.com/prashantjawale/witbash#readme",
+  "scripts": {
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js",
+    "dev": "npm run dev --prefix client",
+    "test": "npm test --prefix server && npm test --prefix client",
+    "test:server": "npm test --prefix server",
+    "test:client": "npm test --prefix client",
+    "setup": "cd server && npm install && cd ../client && npm install && npx vite build"
+  }
+}
